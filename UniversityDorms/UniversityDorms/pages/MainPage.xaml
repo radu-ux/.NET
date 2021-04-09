@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:universitydorms="clr-namespace:UniversityDorms"
+             x:Class="UniversityDorms.MainPage">
+    <ContentPage.Resources>
+        <ControlTemplate x:Key="CardViewControlTemplate">
+            <Frame BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                     BorderColor="Black"
+                     CornerRadius="5"
+                     HasShadow="True"
+                     Padding="5"
+                     Margin="5"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                             Text="{Binding CardTitle}"
+                             TextColor="DarkBlue"
+                             FontAttributes="Bold"
+                             FontSize="Large"
+                             VerticalTextAlignment="Start"
+                             HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="2"
+                             Grid.ColumnSpan="2"
+                             Text="{Binding CardDescription}"
+                             VerticalTextAlignment="Start"
+                             VerticalOptions="Fill"
+                             HorizontalOptions="Fill" />
+                    <Button Grid.Row="3"
+                            ClassId="{Binding ButtonId}"
+                            Text="See Details"
+                            HorizontalOptions="Start"
+                            Clicked="cardButtonClicked"/> 
+                </Grid>
+            </Frame>
+        </ControlTemplate>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Margin="30">
+            <Label x:Name="Title" Text="UVT Dorms" FontSize="Title"
+                   FontAttributes="Bold" HorizontalTextAlignment="Center" 
+                   TextColor="DarkSlateGray"/>
+            <universitydorms:CardTemplate
+                                CardTitle="Dorm Number 1"
+                                CardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elit dolor, convallis non interdum."
+                                ButtonId="Dorm C1"
+                                ControlTemplate="{StaticResource CardViewControlTemplate}" />
+            <universitydorms:CardTemplate
+                                CardTitle="Dorm Number 2"
+                                CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                                ButtonId="Dorm C2"
+                                ControlTemplate="{StaticResource CardViewControlTemplate}" />
+            <universitydorms:CardTemplate
+                                CardTitle="Dorm Number 3"
+                                CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                                ButtonId="Dorm C3"
+                                ControlTemplate="{StaticResource CardViewControlTemplate}" />
+            <universitydorms:CardTemplate
+                                CardTitle="Dorm Number 4"
+                                CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                                ButtonId="Dorm C4"
+                                ControlTemplate="{StaticResource CardViewControlTemplate}" />
+            <Label></Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
