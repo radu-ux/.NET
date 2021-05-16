@@ -9,8 +9,8 @@ namespace UniversityDorms.models
         public string DormName { get; set; }
         public int NrOfRooms { get; set; }
         public string DormLocation { get; set; }
-        public string PricePerMonth { get; set; }
+        public int PricePerMonth { get; set; }
         public int StudentPerRoom { get; set; }
-        public int NrOfFlors { get; set; }
+        public int NrOfFloors { get; set; }
     }
 }

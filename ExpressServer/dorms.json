@@ -4,33 +4,33 @@
 			"DormName": "Dorm C1",
 				"NrOfRooms": 234,
 				"DormLocation": "Str. Libertaii nr. 5",
-				"PricePerMonth": "120 lei",
+				"PricePerMonth": 120,
 				"StudentPerRoom": 3,
-				"NrOfFlors": 3
+				"NrOfFloors": 3
 		},
 		{
 			"DormName": "Dorm C2",
 				"NrOfRooms": 234,
 				"DormLocation": "Str. Libertaii nr. 5",
-				"PricePerMonth": "120 lei",
+				"PricePerMonth": 120,
 				"StudentPerRoom": 3,
-				"NrOfFlors": 3
+				"NrOfFloors": 3
 		},
 		{
 			"DormName": "Dorm C3",
 				"NrOfRooms": "234",
 				"DormLocation": "Str. Libertaii nr. 5",
-				"PricePerMonth": "120 lei",
-				"StudentPerRoom": "3",
-				"NrOfFlors": "3"
+				"PricePerMonth": 120,
+				"StudentPerRoom": 3,
+				"NrOfFloors": "3"
 		},
 		{
 			"DormName": "Dorm C4",
 				"NrOfRooms": 234,
 				"DormLocation": "Str. Libertaii nr. 5",
-				"PricePerMonth": "120 lei",
+				"PricePerMonth": 120,
 				"StudentPerRoom": 3,
-				"NrOfFlors": 3
+				"NrOfFloors": 3
 		}
 	]
 }

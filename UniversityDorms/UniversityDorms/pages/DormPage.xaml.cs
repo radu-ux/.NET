@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UniversityDorms.models;
+using UniversityDorms.pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,7 +20,7 @@ namespace UniversityDorms.pages
                 {
                     dormObject.DormName = d.DormName;
                     dormObject.DormLocation = d.DormLocation;
-                    dormObject.NrOfFlors = d.NrOfFlors;
+                    dormObject.NrOfFloors = d.NrOfFloors;
                     dormObject.NrOfRooms = d.NrOfRooms;
                     dormObject.PricePerMonth = d.PricePerMonth;
                     dormObject.StudentPerRoom = d.StudentPerRoom;
@@ -36,6 +33,17 @@ namespace UniversityDorms.pages
         private void DisplayData()
         {
             DormPageTitle.Text = dormObject.DormName;
+            DormLocation.Text = "Location: " + dormObject.DormLocation;
+            NrOfFloors.Text = "Number of floors: " + dormObject.NrOfFloors.ToString();
+            NrOfRooms.Text = "Number of rooms: " + dormObject.NrOfRooms.ToString();
+            PricePerMonth.Text = "Price per month: " + dormObject.PricePerMonth.ToString() + " lei";
+            StudentPerRoom.Text = "Students per room: " + dormObject.StudentPerRoom.ToString();
+        }
+
+        private async void reserveButtonClicked(object sender, EventArgs args)
+        {
+            Button pressedBtn = (Button)sender;
+            Navigation.PushAsync(new LoginPage(dormObject.DormName));
         }
     }
 }

@@ -9,6 +9,25 @@
                    FontAttributes="Bold"
                    FontSize="Large"
                    HorizontalTextAlignment="Center" />
+            <Label x:Name="DormLocation"
+                   FontSize="Medium"
+                   Padding="10"/>
+            <Label x:Name="NrOfRooms"
+                   FontSize="Medium"
+                   Padding="10"/>
+            <Label x:Name="NrOfFloors"
+                   FontSize="Medium"
+                   Padding="10"/>
+            <Label x:Name="StudentPerRoom"
+                   FontSize="Medium"
+                   Padding="10"/>
+            <Label x:Name="PricePerMonth"
+                   FontSize="Medium"
+                   Padding="10"/>
+            <Button ClassId="ReserverDorm"
+                    Text="Reserve place"
+                    Clicked="reserveButtonClicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

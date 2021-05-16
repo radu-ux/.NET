@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UniversityDorms.pages.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkBlue"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   Text="Login with faculty account" />
+            <Entry x:Name="Email"
+                   Grid.Row="1"
+                   Placeholder="Enter email" />
+            <Entry x:Name="Password"
+                   Grid.Row="2"
+                   IsPassword="True"
+                   Placeholder = "Enter password"/>
+            <Button Grid.Row="3"
+                    Text="Submit"
+                    Clicked="submitButtonClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

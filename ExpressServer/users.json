@@ -1,0 +1,14 @@
+{
+  "Users": [
+    {
+      "Email": "radu.uivari99@e-uvt.ro",
+      "Password": "123456",
+      "ReservedDorms": []
+    }, 
+    {
+        "Email": "mircea.lenut@e-uvt.ro",
+        "Password": "111333",
+        "ReservedDorms": []
+      }
+  ]
+}
